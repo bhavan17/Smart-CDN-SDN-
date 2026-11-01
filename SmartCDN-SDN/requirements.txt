@@ -1,3 +1,0 @@
-# External Python package used by controller.py.
-# Install Ryu in the Python environment compatible with your Ubuntu VM.
-ryu
