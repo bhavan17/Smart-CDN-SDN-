@@ -1,0 +1,62 @@
+t=  0.00s  #1    OK  CDN-A
+t=  0.51s  #2    OK  CDN-B
+t=  1.01s  #3    OK  CDN-A
+t=  1.51s  #4    OK  CDN-B
+t=  2.01s  #5    OK  CDN-A
+t=  2.53s  #6    OK  CDN-B
+t=  3.03s  #7    OK  CDN-A
+t=  3.53s  #8    OK  CDN-B
+t=  4.03s  #9    OK  CDN-A
+t=  4.54s  #10   OK  CDN-B
+t=  5.04s  #11   OK  CDN-A
+t=  5.55s  #12   OK  CDN-B
+t=  6.05s  #13   OK  CDN-A
+t=  6.55s  #14   OK  CDN-B
+t=  7.05s  #15   OK  CDN-A
+t=  7.56s  #16   OK  CDN-B
+t=  8.06s  #17   OK  CDN-A
+t=  8.56s  #18   OK  CDN-B
+t=  9.06s  #19   OK  CDN-A
+t=  9.56s  #20   OK  CDN-B
+t= 10.07s  #21   OK  CDN-A
+t= 10.59s  #22   OK  CDN-B
+t= 11.10s  #23   OK  CDN-A
+t= 11.60s  #24   OK  CDN-B
+t= 12.10s  #25   OK  CDN-A
+t= 12.60s  #26   OK  CDN-B
+t= 13.10s  #27   OK  CDN-A
+t= 13.60s  #28   OK  CDN-B
+t= 14.10s  #29   OK  CDN-A
+t= 14.60s  #30   OK  CDN-B
+t= 15.11s  #31   OK  CDN-A
+t= 15.83s  #32   OK  CDN-B
+t= 16.33s  #33   OK  CDN-A
+t= 16.87s  #34   OK  CDN-B
+t= 17.37s  #35   OK  CDN-A
+t= 17.87s  #36   OK  CDN-B
+t= 18.38s  #37   OK  CDN-A
+t= 18.88s  #38   OK  CDN-B
+t= 19.38s  #39   OK  CDN-A
+t= 19.88s  #40   OK  CDN-B
+t= 20.41s  #41   OK  CDN-A
+t= 20.91s  #42   OK  CDN-B
+t= 21.42s  #43   OK  CDN-A
+t= 21.92s  #44   OK  CDN-B
+t= 22.43s  #45   OK  CDN-A
+t= 22.93s  #46   OK  CDN-B
+t= 23.43s  #47   OK  CDN-A
+t= 23.93s  #48   OK  CDN-B
+t= 24.44s  #49   OK  CDN-A
+t= 24.96s  #50   OK  CDN-B
+
+=== SUMMARY: failover_20261027 ===
+Requests            : 50
+Success (200+full)  : 50  (100.0%)
+HTTP errors         : 0
+Socket/other errors : 0
+Served by           : {'CDN-A': 25, 'CDN-B': 25}
+Response ms         : 165.20 +/- 107.94  (mean +/- sd)
+Throughput kbps     : 10350.21 +/- 12871.46
+No failures observed.
+
+Appended 50 rows to /home/bhavan/SmartCDN-SDN/results/generated/failover_20261027.csv

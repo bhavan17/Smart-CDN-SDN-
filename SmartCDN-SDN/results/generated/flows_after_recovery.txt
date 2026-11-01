@@ -1,0 +1,10 @@
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x0, duration=79.423s, table=0, n_packets=5, n_bytes=431, idle_timeout=120, priority=100,tcp,nw_src=10.0.0.1,nw_dst=10.0.0.100,tp_src=37224,tp_dst=8080 actions=set_field:10.0.0.3->ip_dst,set_field:00:00:00:00:00:03->eth_dst,output:3
+ cookie=0x0, duration=79.422s, table=0, n_packets=4, n_bytes=477, idle_timeout=120, priority=100,tcp,nw_src=10.0.0.3,nw_dst=10.0.0.1,tp_src=8080,tp_dst=37224 actions=set_field:10.0.0.100->ip_src,set_field:00:00:00:00:00:64->eth_src,output:1
+ cookie=0x0, duration=78.414s, table=0, n_packets=5, n_bytes=435, idle_timeout=120, priority=100,tcp,nw_src=10.0.0.1,nw_dst=10.0.0.100,tp_src=37226,tp_dst=8080 actions=set_field:10.0.0.4->ip_dst,set_field:00:00:00:00:00:04->eth_dst,output:4
+ cookie=0x0, duration=78.414s, table=0, n_packets=4, n_bytes=454, idle_timeout=120, priority=100,tcp,nw_src=10.0.0.4,nw_dst=10.0.0.1,tp_src=8080,tp_dst=37226 actions=set_field:10.0.0.100->ip_src,set_field:00:00:00:00:00:64->eth_src,output:1
+ cookie=0x0, duration=1121.480s, table=0, n_packets=3422, n_bytes=389877, idle_timeout=120, priority=1,in_port=3,dl_dst=00:00:00:00:00:01 actions=output:1
+ cookie=0x0, duration=1121.296s, table=0, n_packets=3364, n_bytes=398209, idle_timeout=120, priority=1,in_port=4,dl_dst=00:00:00:00:00:01 actions=output:1
+ cookie=0x0, duration=1121.285s, table=0, n_packets=4081, n_bytes=380045, idle_timeout=120, priority=1,in_port=1,dl_dst=00:00:00:00:00:04 actions=output:4
+ cookie=0x0, duration=815.692s, table=0, n_packets=2769, n_bytes=256784, idle_timeout=120, priority=1,in_port=1,dl_dst=00:00:00:00:00:03 actions=output:3
+ cookie=0x0, duration=1650.172s, table=0, n_packets=252, n_bytes=18940, priority=0 actions=CONTROLLER:65535

@@ -1,0 +1,188 @@
+
+[Request 1/5]
+
+==========================================================
+Request                 : GET /video-demo.txt
+Destination             : 10.0.0.100:8080
+Selected server         : CDN-B
+TCP connect time        : 1069.40 ms
+Total response          : 1076.30 ms
+Received total bytes    : 59583
+Received body bytes     : 59431 / 59431
+Response throughput     : 442.87 kbps
+Body throughput         : 441.74 kbps
+HTTP status             : HTTP/1.1 200 OK
+Response complete       : YES
+Request result          : SUCCESS
+Body preview            :
+Demo media segment delivered by CDN-B.
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-01234567
+... (body preview truncated)
+==========================================================
+
+[Request 2/5]
+
+==========================================================
+Request                 : GET /video-demo.txt
+Destination             : 10.0.0.100:8080
+Selected server         : CDN-B
+TCP connect time        : 11.35 ms
+Total response          : 14.69 ms
+Received total bytes    : 59583
+Received body bytes     : 59431 / 59431
+Response throughput     : 32457.89 kbps
+Body throughput         : 32375.09 kbps
+HTTP status             : HTTP/1.1 200 OK
+Response complete       : YES
+Request result          : SUCCESS
+Body preview            :
+Demo media segment delivered by CDN-B.
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-01234567
+... (body preview truncated)
+==========================================================
+
+[Request 3/5]
+
+==========================================================
+Request                 : GET /video-demo.txt
+Destination             : 10.0.0.100:8080
+Selected server         : CDN-B
+TCP connect time        : 9.58 ms
+Total response          : 11.58 ms
+Received total bytes    : 59583
+Received body bytes     : 59431 / 59431
+Response throughput     : 41171.31 kbps
+Body throughput         : 41066.27 kbps
+HTTP status             : HTTP/1.1 200 OK
+Response complete       : YES
+Request result          : SUCCESS
+Body preview            :
+Demo media segment delivered by CDN-B.
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-01234567
+... (body preview truncated)
+==========================================================
+
+[Request 4/5]
+
+==========================================================
+Request                 : GET /video-demo.txt
+Destination             : 10.0.0.100:8080
+Selected server         : CDN-B
+TCP connect time        : 5.39 ms
+Total response          : 223.44 ms
+Received total bytes    : 59583
+Received body bytes     : 59431 / 59431
+Response throughput     : 2133.26 kbps
+Body throughput         : 2127.82 kbps
+HTTP status             : HTTP/1.1 200 OK
+Response complete       : YES
+Request result          : SUCCESS
+Body preview            :
+Demo media segment delivered by CDN-B.
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-01234567
+... (body preview truncated)
+==========================================================
+
+[Request 5/5]
+
+==========================================================
+Request                 : GET /video-demo.txt
+Destination             : 10.0.0.100:8080
+Selected server         : CDN-B
+TCP connect time        : 10.46 ms
+Total response          : 12.07 ms
+Received total bytes    : 59583
+Received body bytes     : 59431 / 59431
+Response throughput     : 39503.26 kbps
+Body throughput         : 39402.48 kbps
+HTTP status             : HTTP/1.1 200 OK
+Response complete       : YES
+Request result          : SUCCESS
+Body preview            :
+Demo media segment delivered by CDN-B.
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-0123456789
+SMART-CDN-SEGMENT-01234567
+... (body preview truncated)
+==========================================================
+
+SUMMARY
+Successful complete HTTP 200 : 5/5
+Completed TCP responses     : 5/5
+Average response            : 267.61 ms
+Average response throughput : 23141.72 kbps
+Average body throughput     : 23082.68 kbps
+Servers observed            : CDN-B, CDN-B, CDN-B, CDN-B, CDN-B

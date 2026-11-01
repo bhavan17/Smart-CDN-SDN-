@@ -1,0 +1,4 @@
+Policy,Total_Successful,Total_Requests,Success_Rate,Mean_Response_ms,Mean_Response_Throughput_kbps,Mean_Body_Throughput_kbps
+Round-Robin,30,30,100%,248.03,14633.12,14595.78
+Static,30,30,100%,141.71,17303.63,17259.48
+Adaptive,30,30,100%,191.67,14446.92,14410.07

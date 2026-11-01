@@ -1,0 +1,10 @@
+Policy,Trial,Successful,Total,Average_Response_ms,Response_Throughput_kbps,Body_Throughput_kbps,Backend_Distribution
+Round-Robin,1,10,10,262.59,20580.87,20528.36,5 CDN-A and 5 CDN-B
+Round-Robin,2,10,10,127.23,12626.93,12594.72,5 CDN-A and 5 CDN-B
+Round-Robin,3,10,10,354.27,10691.55,10664.27,5 CDN-A and 5 CDN-B
+Static,1,10,10,61.22,22623.95,22566.23,10 CDN-A
+Static,2,10,10,151.50,17417.42,17372.98,10 CDN-A
+Static,3,10,10,212.41,11869.51,11839.23,10 CDN-A
+Adaptive,1,10,10,60.34,25754.36,25688.66,5 CDN-A and 5 CDN-B
+Adaptive,2,10,10,235.43,11885.16,11854.84,5 CDN-A and 5 CDN-B
+Adaptive,3,10,10,279.25,5701.25,5686.70,5 CDN-A and 5 CDN-B
