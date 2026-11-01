@@ -181,21 +181,52 @@ The committed baseline results came from three trials of ten requests per policy
 | Static | 30/30 (100%) | 141.71 ms | 17,303.63 kbps |
 | Adaptive | 30/30 (100%) | 191.67 ms | 14,446.92 kbps |
 
-Details are in [`results/performance_trials.csv`](results/performance_trials.csv) and [`results/performance_summary.csv`](results/performance_summary.csv). The trials show substantial response-time variation. Static was fastest on these particular measurements; the results do not establish that it will be fastest in other conditions. A controlled latency-degradation test was subsequently performed by applying an 80 ms NetEm delay to CDN-A. Its measured latency increased to approximately 99.98 ms while CDN-B remained near 5.11 ms. Under Adaptive, all 10 client requests were served by CDN-B. This demonstrates the observed behavior in this Mininet scenario, not universal performance superiority.
+Details are in [`results/performance_trials.csv`](results/performance_trials.csv) and [`results/performance_summary.csv`](results/performance_summary.csv). The trials show substantial response-time variation. Static was fastest on these particular measurements; the results do not establish that it will be fastest in other conditions.
 
-Batch benchmark, from the Mininet prompt:
+A controlled latency-degradation test was performed by applying an 80 ms NetEm delay to CDN-A. Its measured latency increased to approximately 99.98 ms while CDN-B remained near 5.11 ms. Under Adaptive, all 10 client requests were served by CDN-B. This demonstrates the observed behavior in this Mininet scenario, not universal performance superiority.
+
+### Batch benchmark
+
+Run from the Mininet prompt:
 
 ```text
 mininet> h1 python3 /home/bhavan/SmartCDN-SDN/benchmark.py --label roundrobin_baseline --runs 3 --requests 10 --out /home/bhavan/SmartCDN-SDN/results/generated/roundrobin.csv
 ```
 
-Continuous-request benchmark, useful during a planned backend-failure test:
+### Continuous-request benchmark
+
+Useful during a planned backend-failure test:
 
 ```text
 mininet> h1 python3 /home/bhavan/SmartCDN-SDN/benchmark.py --label failover_window --duration 25 --interval 0.5 --out /home/bhavan/SmartCDN-SDN/results/generated/failover_window.csv
 ```
 
 The script creates the output directory when needed. For a failover observation, start the benchmark first, stop only the CDN-A server process from the Mininet CLI, observe the monitor/controller state, and restart CDN-A. Do not claim zero-loss failover unless the continuous log shows no failed requests during the transition.
+
+### Direct-backend baseline
+
+To provide a reference measurement without VIP-based SDN backend selection, the benchmark client can send requests directly to each backend. This bypasses the controller's load-balancing decision while retaining the Mininet/OVS network.
+
+Run the following commands from the Mininet prompt with both backend servers running.
+
+**CDN-A (h3):**
+
+```text
+mininet> h1 python3 /home/bhavan/SmartCDN-SDN/benchmark.py --target 10.0.0.3 --port 8080 --path /video-demo.txt --label direct_cdn_a_baseline --runs 3 --requests 10 --clients 1 --out /home/bhavan/SmartCDN-SDN/results/direct_baseline.csv
+```
+
+**CDN-B (h4):**
+
+```text
+mininet> h1 python3 /home/bhavan/SmartCDN-SDN/benchmark.py --target 10.0.0.4 --port 8080 --path /video-demo.txt --label direct_cdn_b_baseline --runs 3 --requests 10 --clients 1 --out /home/bhavan/SmartCDN-SDN/results/direct_baseline.csv
+```
+
+Each backend receives 30 requests across three runs, for 60 requests total. The CSV records request success, response time, throughput, and backend identity.
+
+**Current direct-backend results:** Not yet measured. Run both commands and record the observed success rate, mean response time, and throughput here before drawing conclusions.
+
+**Interpretation:** This is a direct-backend reference, not a fully non-SDN baseline. Traffic still traverses Mininet and OVS, but bypasses the VIP and controller-based backend selection. Compare these measurements with the VIP-based SDN results while noting this difference in the evaluation.
+
 
 ## REST API
 
