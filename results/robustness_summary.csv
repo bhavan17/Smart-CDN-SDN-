@@ -1,0 +1,9 @@
+Cycle,Test,Expected_Result,Observed_Result,Status
+1,Automatic failure detection,CDN-A unhealthy and ineligible,"CDN-A unhealthy; CDN-B healthy and eligible",PASS
+1,Failover,Traffic continues via CDN-B,"5/5 successful; all served by CDN-B",PASS
+1,Recovery,Both backends healthy and eligible,"Both backends healthy and eligible",PASS
+1,Post-recovery traffic,VIP service works after recovery,"10/10 successful; both backends observed",PASS
+2,Automatic failure detection,CDN-A unhealthy and ineligible,"CDN-A unhealthy; CDN-B healthy and eligible",PASS
+2,Failover,Traffic continues via CDN-B,"5/5 successful; all served by CDN-B",PASS
+2,Recovery,Both backends healthy and eligible,"Both backends healthy and eligible",PASS
+2,Post-recovery traffic,VIP service works after recovery,"10/10 successful; both backends observed",PASS
