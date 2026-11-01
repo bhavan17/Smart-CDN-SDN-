@@ -221,11 +221,16 @@ mininet> h1 python3 /home/bhavan/SmartCDN-SDN/benchmark.py --target 10.0.0.3 --p
 mininet> h1 python3 /home/bhavan/SmartCDN-SDN/benchmark.py --target 10.0.0.4 --port 8080 --path /video-demo.txt --label direct_cdn_b_baseline --runs 3 --requests 10 --clients 1 --out /home/bhavan/SmartCDN-SDN/results/direct_baseline.csv
 ```
 
-Each backend receives 30 requests across three runs, for 60 requests total. The CSV records request success, response time, throughput, and backend identity.
+Each backend received 30 requests across three runs, for 60 requests total. Both benchmarks completed with 30/30 successful requests and no HTTP or socket errors. The CSV records request success, response time, throughput, and backend identity.
 
-**Current direct-backend results:** Not yet measured. Run both commands and record the observed success rate, mean response time, and throughput here before drawing conclusions.
+**Measured direct-backend results:**
 
-**Interpretation:** This is a direct-backend reference, not a fully non-SDN baseline. Traffic still traverses Mininet and OVS, but bypasses the VIP and controller-based backend selection. Compare these measurements with the VIP-based SDN results while noting this difference in the evaluation.
+| Direct backend | Successful requests | Mean response time | Mean response throughput |
+|---|---:|---:|---:|
+| CDN-A (h3, `10.0.0.3`) | 30/30 (100%) | 4.36 ms | 168,244.79 kbps |
+| CDN-B (h4, `10.0.0.4`) | 30/30 (100%) | 4.33 ms | 221,387.19 kbps |
+
+**Interpretation:** These are direct-backend reference results, not a fully non-SDN baseline. Traffic still traverses Mininet and OVS, but bypasses the VIP and controller-based backend selection. Compare these measurements with the VIP-based SDN results while noting this difference in the evaluation.
 
 
 ## REST API
