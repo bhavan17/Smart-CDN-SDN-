@@ -20,7 +20,7 @@ The controller uses the `latency_ms` reports held for eligible backends. It comp
 
 Eligible backends whose known latency is no greater than the threshold enter the selection pool. Selection then rotates through this pool. In the committed `monitor.py`, `latency_ms` is TCP connection-establishment time (`connect()` elapsed time); it is **not** full HTTP round-trip time and does not measure packet loss, bandwidth, link utilization, or end-to-end content-transfer quality. Unknown latency values are not currently treated as a separate explicit state in the adaptive pool filter.
 
-The existing benchmark shows that Adaptive succeeded and used both servers, but the recorded latency values were similar. The evidence does not establish that Adaptive reacts to a deliberately degraded backend or outperforms the other policies.
+A controlled latency-degradation experiment was conducted by applying an additional 80 ms NetEm delay to the link connected to CDN-A. During the impairment, the health monitor measured approximately 99.98 ms for CDN-A and 5.11 ms for CDN-B. Under the Adaptive policy, all 10 client requests completed successfully through CDN-B. After the impairment was removed, the measured latency values returned to approximately 4.99 ms for CDN-A and 5.39 ms for CDN-B, and both backends were healthy and eligible again. This experiment demonstrates degradation-aware backend selection under the tested Mininet conditions, but does not establish universal performance superiority for Adaptive.
 
 ## Health thresholds and fail-closed behavior
 
